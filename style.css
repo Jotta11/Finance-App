@@ -150,7 +150,9 @@ button {
 button:active {
     opacity: 0.8;
 }
-
+button[disabled]{
+    opacity: 0.5;
+}
 .login {
     border-radius: 10px;
     width: 150px;

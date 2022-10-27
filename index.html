@@ -17,28 +17,26 @@
                 <div>
                     <div class="wrap-input100 validate-input" data-validate="Enter username"
                         style="font-family: Poppins-Medium;"></div>
-                    <input type="email" class="inputemail" name="email" placeholder="E-mail" />
-                    <span class="focus-input100" data-placeholder=""></span>
+                    <input type="email" class="inputemail" id="email" onchange="validateFields()" name="email" placeholder="E-mail" />
                 </div>
                 <div>
                     <div style="font-family: Poppins-Medium;"></div>
-                    <input type="password" class="inputpass" name="password" placeholder="Senha" />
+                    <input type="password" class="inputpass" onchange="validateFields()" id="password" name="password" placeholder="Senha" />
                 </div>
                 <div class="buttforg">
-                    <button type="button" class="clear"> Forgot Password?</button>
+                    <button type="button" class="clear" id="forgot-button" disabled="true"> Forgot Password?</button>
                 </div>
                 <div class="buttlogin">
-                    <button type="button" class="login"> Entrar </button>
+                    <button type="button" class="login" id="login-button" disabled="true"> Entrar </button>
                 </div>
                 <div class="buttres">
-                    <button type="button" class="registro"> Registrar </button>
+                    <button type="button" class="registro" disabled="true"> Registrar </button>
                 </div>
             </form>
         </div>
     </div>
 </body>
 
-<link rel="stylesheet" href="style.css" />]
-<link rel="script" href="script.js"/>
-
+<link rel="stylesheet" href="style.css" />
+<script src="./script.js"></script>
 </html>
