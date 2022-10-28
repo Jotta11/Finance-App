@@ -100,7 +100,7 @@ button {
     height: 15px;
     background: transparent;
     border-bottom: 2px solid #03bb85;
-    margin-bottom: 30px;
+    margin-bottom: 6px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -119,7 +119,7 @@ button {
     height: 15px;
     background: transparent;
     border-bottom: 2px solid #03bb85;
-    margin-bottom: 30px;
+    margin-bottom: 6px;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -133,7 +133,7 @@ button {
     background-color: transparent;
     border: none;
     margin-bottom: 0px;
-    margin-top: -35px;
+    margin-top: -15px;
     padding-left: 9px;
     margin-left: -92px;
     color: #03bb85;
@@ -179,6 +179,9 @@ button[disabled]{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-left: 0px;
 }
 
 .registro {
@@ -187,4 +190,9 @@ button[disabled]{
     background-color: #ffffff;
     color: #03bb85;
     border-color: #03bb85;
+}
+
+.error{
+    color: #f00;
+    display: none;
 }
