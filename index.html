@@ -17,11 +17,13 @@
                 <div>
                     <div class="wrap-input100 validate-input" data-validate="Enter username"
                         style="font-family: Poppins-Medium;"></div>
-                    <input type="email" class="inputemail" id="email" onchange="validateFields()" name="email" placeholder="E-mail" />
+                    <input type="email" class="inputemail" id="email" onchange="onChangeEmail()" name="email" placeholder="E-mail" />
+                    <div class="error" id="email-error" style="font-family: Poppins-Medium;" style=" margin-bottom: 15px;">E-mail inválido!</div>
                 </div>
                 <div>
                     <div style="font-family: Poppins-Medium;"></div>
-                    <input type="password" class="inputpass" onchange="validateFields()" id="password" name="password" placeholder="Senha" />
+                    <input type="password" class="inputpass" onchange="onChangePassword()" id="password" name="password" placeholder="Senha" />
+                    <div class="error" id="password-error" style="font-family: Poppins-Medium;">Senha inválida!</div>
                 </div>
                 <div class="buttforg">
                     <button type="button" class="clear" id="forgot-button" disabled="true"> Forgot Password?</button>
@@ -39,4 +41,5 @@
 
 <link rel="stylesheet" href="style.css" />
 <script src="./script.js"></script>
+<script src="./validations.js"></script>
 </html>
