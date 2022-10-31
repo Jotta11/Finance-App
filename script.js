@@ -8,6 +8,14 @@ function onChangePassword() {
     togglePasswordErrors();
 }
 
+function nextPageLogin() {
+    window.location.href = "Pages/Home/home.html";
+}
+
+function nextPageRegister(){
+    window.location.href = "Pages/Register/register.html"
+}
+
 function isEmailValid() {
     const email = form.email().value;
     if (!email) {
