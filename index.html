@@ -43,9 +43,18 @@
 <link rel="stylesheet" href="style.css" />
 <script src="./script.js"></script>
 <script src="./validations.js"></script>
-<script src="./firebase.js	" ></script>
-<script type= module>
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+<script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js"></script>
+<script>
+     const firebaseConfig = {
+    apiKey: "AIzaSyBR2STVD-9DH9rjNWAZAkdndHQCaG9GPuc",
+    authDomain: "peach-manager.firebaseapp.com",
+    projectId: "peach-manager",
+    storageBucket: "peach-manager.appspot.com",
+    messagingSenderId: "325103798734",
+    appId: "1:325103798734:web:eacfe3a59a7b74511e839f"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
 </script>
-
 </html>
