@@ -56,5 +56,16 @@
   };
   
   firebase.initializeApp(firebaseConfig);
+
+const auth = getAuth(firebaseApp);
+
+ console.log('antes');
+ firebase.auth().signInWithEmailAndPassword(auth, "any@email.com","12345").then(Response => {
+  console.log('success', Response)
+ }).catch(error => {
+  console.log('error', error)
+  });
+  console.log('depois')
+
 </script>
 </html>
