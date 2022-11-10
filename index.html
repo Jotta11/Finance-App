@@ -43,10 +43,10 @@
 <link rel="stylesheet" href="style.css" />
 <script src="./script.js"></script>
 <script src="./validations.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth.js"></script>
-<script>
-     const firebaseConfig = {
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-app.js";
+
+  const firebaseConfig = {
     apiKey: "AIzaSyBR2STVD-9DH9rjNWAZAkdndHQCaG9GPuc",
     authDomain: "peach-manager.firebaseapp.com",
     projectId: "peach-manager",
@@ -55,17 +55,17 @@
     appId: "1:325103798734:web:eacfe3a59a7b74511e839f"
   };
   
-  firebase.initializeApp(firebaseConfig);
+  const app = initializeApp(firebaseConfig);
 
-const auth = getAuth(firebaseApp);
+  import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/9.14.0/firebase-auth.js";
 
- console.log('antes');
- firebase.auth().signInWithEmailAndPassword(auth, "any@email.com","12345").then(Response => {
-  console.log('success', Response)
- }).catch(error => {
-  console.log('error', error)
-  });
-  console.log('depois')
-
+const auth = getAuth();
+console.log('antes');
+signInWithEmailAndPassword(auth, 'jgbgdondim@gmail.com', 'GOndim25j@')
+  .then((userCredential) => {
+    const user = UDoMw3gCN4N5PfAJfbmgcs4PZm83l.user;
+  })
+  console.log('depois');
 </script>
+
 </html>
