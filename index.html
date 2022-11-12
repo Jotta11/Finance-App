@@ -61,11 +61,12 @@
 
 const auth = getAuth();
 console.log('antes');
-signInWithEmailAndPassword(auth, 'jgbgdondim@gmail.com', 'GOndim25j@')
+signInWithEmailAndPassword(auth, 'jgbgdondim@gmail.com', 'Gondim25j@')
   .then((userCredential) => {
-    const user = UDoMw3gCN4N5PfAJfbmgcs4PZm83l.user;
+    const user = userCredential.user;
   })
   console.log('depois');
+  console.log('oi');
 </script>
 
 </html>
