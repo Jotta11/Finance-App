@@ -1,9 +1,9 @@
 {
   "name": "finance-manager",
   "version": "1.0.0",
+  "type": "module",
   "description": "Finance Manager build with JS, HTML/CSS",
   "main": "script.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
