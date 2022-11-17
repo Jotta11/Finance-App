@@ -1,5 +1,3 @@
-import { getAuth, signInWithEmailAndPassword } from "./node_modules/@firebase/auth";
-
 function onChangeEmail() {
     toggleButtonsDisable();
     toggleEmailErrors();
@@ -10,15 +8,9 @@ function onChangePassword() {
     togglePasswordErrors();
 }
 
-function nextPageLogin() {
-   // window.location.href = "Pages/Home/home.html";
-   const auth = getAuth();
-   signInWithEmailAndPassword(auth, 'jgbgdondim@gmail.com', 'Gondim25j@').then(Response => {
-       console.log('sucess', Response)
-   }).catch(error => {
-       console.log('error', error)
-   });  
-
+function nextPageLogin () {
+    window.location.href = "../Pages/Home/home.html";
+    
 }
 
 function nextPageRegister(){
