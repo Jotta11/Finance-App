@@ -10,7 +10,6 @@ function onChangePassword() {
 
 function nextPageLogin () {
     window.location.href = "../Pages/Home/home.html";
-    
 }
 
 function nextPageRegister(){
